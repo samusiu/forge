@@ -7,7 +7,7 @@
 //
 // Styleguide Spinner
 .spinner {
-  background: transparent data-url($data-spinner-svg) no-repeat center center;
+  background: transparent forge-asset-url('images/spinner.svg') no-repeat center center;
   background-size: 32px;
   height: 32px;
   width: 32px;

@@ -121,7 +121,7 @@
     position: relative;
     color: $light-gray;
     color: transparent;
-    background: #eee data-url($data-spinner-svg) no-repeat center center;
+    background: #eee forge-asset-url('images/spinner.svg') no-repeat center center;
     background-size: 32px;
     box-shadow: none;
     cursor: default;

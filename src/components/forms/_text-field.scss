@@ -48,7 +48,7 @@
   }
 
   &.-search {
-    background-image: data-url($data-search-svg);
+    background-image: forge-asset-url('images/search.svg');
     padding-right: 0;
 
     // Search "cancel" button does not render properly on fields with padding.
@@ -62,7 +62,7 @@
   }
 
   &.is-loading {
-    background-image: data-url($data-spinner-svg);
+    background-image: forge-asset-url('images/spinner.svg');
 
     .modernizr-no-svg &,
     .modernizr-no-smil & {
