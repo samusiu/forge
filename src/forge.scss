@@ -24,55 +24,53 @@
 @import "../node_modules/susy/sass/susy";
 
 // We define some of our own variables and mixins to keep things DRY.
-@import "_utilities/variables";
-@import "_utilities/functions";
-@import "_utilities/mixins";
-@import "_utilities/data";
+@import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/data";
 
 // Base
-@import "_base/reset";
-@import "_base/fonts";
-@import "_base/animations";
-@import "_base/base";
-@import "_base/helpers";
+@import "base/reset";
+@import "base/fonts";
+@import "base/animations";
+@import "base/base";
+@import "base/helpers";
 
 // Components - basic non-divisible building blocks
-@import "_components/avatar";
-@import "_components/chat-bubble";
-@import "_components/_forms/button";
-@import "_components/_forms/field-label";
-@import "_components/_forms/form-actions";
-@import "_components/_forms/form-item";
-@import "_components/_forms/media-options";
-@import "_components/_forms/option";
-@import "_components/_forms/select";
-@import "_components/_forms/text-field";
-@import "_components/heading";
-@import "_components/list";
-@import "_components/footnote";
-@import "_components/media-video";
-@import "_components/message-callout";
-@import "_components/messages";
-@import "_components/social-icon";
-@import "_components/spinner";
-@import "_components/waypoints";
-
-// Modules - basic patterns, may contain other components or modules
-@import "_modules/cta";
-@import "_modules/figure";
-@import "_modules/gallery";
-@import "_modules/info-bar";
-@import "_modules/polaroid";
-@import "_modules/social-menu";
-@import "_modules/tabs";
-@import "_modules/tile";
+@import "components/forms/button";
+@import "components/forms/field-label";
+@import "components/forms/form-actions";
+@import "components/forms/form-item";
+@import "components/forms/media-options";
+@import "components/forms/option";
+@import "components/forms/select";
+@import "components/forms/text-field";
+@import "components/avatar";
+@import "components/chat-bubble";
+@import "components/cta";
+@import "components/figure";
+@import "components/footnote";
+@import "components/gallery";
+@import "components/heading";
+@import "components/info-bar";
+@import "components/list";
+@import "components/media-video";
+@import "components/message-callout";
+@import "components/messages";
+@import "components/polaroid";
+@import "components/social-icon";
+@import "components/social-menu";
+@import "components/spinner";
+@import "components/tabs";
+@import "components/tile";
+@import "components/waypoints";
 
 // Regions - complete sections of an interface
-@import "_regions/chrome";
-@import "_regions/container";
-@import "_regions/footer";
-@import "_regions/header";
-@import "_regions/modal";
-@import "_regions/navigation";
+@import "regions/chrome";
+@import "regions/container";
+@import "regions/footer";
+@import "regions/header";
+@import "regions/modal";
+@import "regions/navigation";
 
 // *Mic drop.

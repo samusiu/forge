@@ -60,8 +60,8 @@ module.exports = function(grunt) {
       // On production builds, minify and remove comments.
       prod: {
         files: {
-          'dist/forge.css': 'scss/forge.scss',
-          'dist/styleguide.css': 'scss/styleguide.scss'
+          'dist/forge.css': 'src/forge.scss',
+          'dist/styleguide.css': 'styleguide/styleguide.scss'
         },
         options: {
           outputStyle: 'compressed'
@@ -71,8 +71,8 @@ module.exports = function(grunt) {
       // On development builds, include source maps & do not minify.
       debug: {
         files: {
-          'dist/forge.css': 'scss/forge.scss',
-          'dist/styleguide.css': 'scss/styleguide.scss'
+          'dist/forge.css': 'src/forge.scss',
+          'dist/styleguide.css': 'styleguide/styleguide.scss'
         },
         options: {
           sourceMap: true
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
      */
     webpack: {
       options: {
-        entry: './js/index.js',
+        entry: './src/index.js',
         output: {
           filename: 'dist/forge.js',
           library: 'Forge',
@@ -180,7 +180,7 @@ module.exports = function(grunt) {
           "src": [
             "js/**/*.js",
             "!js/modernizr/**/*.js",
-            "scss/**/*.scss"
+            "src/**/*.src"
           ]
         },
         extensibility : {
@@ -206,14 +206,14 @@ module.exports = function(grunt) {
      * Lint JavaScript using ESLint.
      */
     eslint: {
-      target: ["js/**/*.js", "!js/modernizr/**/*.js"]
+      all: ["src/**/*.js", "!src/modernizr/**/*.js"]
     },
 
     /**
      * Lint SCSS using Sasslint.
      */
     sasslint: {
-      all: ['scss/**/*.scss'],
+      all: ['src/**/*.src'],
     },
 
     /**
@@ -221,7 +221,7 @@ module.exports = function(grunt) {
      */
     watch: {
       sass: {
-        files: ["scss/**/*.scss"],
+        files: ["src/**/*.src"],
         tasks: ["sass:debug", "postcss:debug", "sasslint"]
       },
       js: {

@@ -6,13 +6,13 @@
  * to `window.Forge` when included on a page as a script tag.
  */
 
-import './footer';
-import './footnote';
-import './jump-scroll';
-import './navigation';
-import Messages from './messages';
-import './scroll-indicator';
-import './tabs';
+import './components/tabs';
+import './components/footnote';
+import './regions/footer';
+import './regions/navigation';
+import './utilities/jump-scroll';
+import './utilities/scroll-indicator';
+import Messages from './components/messages';
 
 // Export public API
 export default { Messages };
