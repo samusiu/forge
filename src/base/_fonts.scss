@@ -39,11 +39,11 @@
 // Icomoon (icon font)
 @font-face {
   font-family: "icomoon";
-  src: forge-asset-url("icons/icomoon.eot");
-  src: forge-asset-url("icons/icomoon.eot#iefix") format("embedded-opentype"),
-       forge-asset-url("icons/icomoon.ttf") format("truetype"),
-       forge-asset-url("icons/icomoon.woff") format("woff"),
-       forge-asset-url("icons/icomoon.svg#icomoon") format("svg");
+  src: url("../../assets/icons/icomoon.eot");
+  src: url("../../assets/icons/icomoon.eot#iefix") format("embedded-opentype"),
+       url("../../assets/icons/icomoon.ttf") format("truetype"),
+       url("../../assets/icons/icomoon.woff") format("woff"),
+       url("../../assets/icons/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }

@@ -20,25 +20,11 @@
 //   Forge's variables and helpers.
 //
 
-// We use Susy 2 to build semantic grid layouts.
-@import "../node_modules/susy/sass/susy";
+@import "base/index";
 
-// We define some of our own variables and mixins to keep things DRY.
-@import "utilities/variables";
-@import "utilities/functions";
-@import "utilities/mixins";
-@import "utilities/data";
-
-// Base
-@import "base/reset";
-@import "base/fonts";
-@import "base/animations";
-@import "base/base";
-@import "base/helpers";
-
-// Components - basic non-divisible building blocks
+// Components
 @import "components/forms/button";
-@import "components/forms/field-label";
+@import "components/forms/FieldLabel";
 @import "components/forms/form-actions";
 @import "components/forms/form-item";
 @import "components/forms/media-options";
@@ -58,14 +44,14 @@
 @import "components/message-callout";
 @import "components/messages";
 @import "components/polaroid";
-@import "components/social-icon";
-@import "components/social-menu";
+@import "components/SocialIcon/social-icon";
+@import "components/SocialMenu/social-menu";
 @import "components/spinner";
 @import "components/tabs";
 @import "components/tile";
 @import "components/waypoints";
 
-// Regions - complete sections of an interface
+// Regions
 @import "regions/chrome";
 @import "regions/container";
 @import "regions/footer";

@@ -6,13 +6,13 @@
  * to `window.Forge` when included on a page as a script tag.
  */
 
-import './components/tabs';
-import './components/footnote';
-import './regions/footer';
-import './regions/navigation';
-import './utilities/jump-scroll';
-import './utilities/scroll-indicator';
-import Messages from './components/messages';
+// These are our base styles - HTML reset, font declarations,
+// base elements, animation keyframes, and utility classes.
+// Consider it a coat of "primer" before we begin building.
+import './base/base.scss';
+
+// Components and their markup/logic:
+import Avatar from './components/Avatar';
 
 // Export public API
-export default { Messages };
+export default { Avatar };
