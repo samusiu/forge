@@ -13,6 +13,14 @@ import './base/base.scss';
 
 // Components and their markup/logic:
 import Avatar from './components/Avatar';
+import Button from './components/Button';
+import Chrome from './components/Chrome';
+import { Container, ContainerBlock } from './components/Container';
+import MessageCallout from './components/MessageCallout';
+import Heading from './components/Heading';
 
 // Export public API
-export default { Avatar };
+export default {
+  Avatar, Button, Chrome, Container, ContainerBlock, MessageCallout,
+  Heading,
+};
